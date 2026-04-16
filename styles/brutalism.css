@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Anton&display=swap');
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Courier Prime', monospace;
+  background: #fffef5;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #000;
+}
+
+.page-header { text-align: center; margin-bottom: 48px; }
+.page-header h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.page-header p { margin-top: 8px; color: #555; font-size: .9rem; }
+
+.showcase { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 0; }
+
+.card {
+  padding: 28px 32px;
+  border: 2px solid #000;
+  border-bottom: none;
+}
+.card:last-child { border-bottom: 2px solid #000; }
+
+.card h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: .85rem;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* ── Brutalist button base ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Courier Prime', monospace;
+  font-weight: 700;
+  cursor: pointer;
+  transition: none;
+  text-decoration: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  border: 2px solid #000;
+  border-radius: 0;
+}
+.btn:hover { background: #000; color: #fffef5 !important; }
+.btn:active { }
+
+/* Sizes */
+.btn-sm { font-size: .78rem; padding: 6px 12px; }
+.btn-md { font-size: .9rem; padding: 10px 18px; }
+.btn-lg { font-size: 1rem; padding: 14px 28px; }
+
+/* Fill variants */
+.btn-black  { background: #000; color: #fffef5; }
+.btn-black:hover  { background: #333; }
+.btn-white  { background: #fffef5; color: #000; }
+.btn-red    { background: #e00; color: #fff; }
+.btn-red:hover    { background: #000; }
+.btn-yellow { background: #ffd600; color: #000; }
+.btn-yellow:hover { background: #000; color: #ffd600 !important; }
+.btn-green  { background: #006600; color: #fff; }
+.btn-green:hover  { background: #000; }
+.btn-cyan   { background: #00c8c8; color: #000; }
+.btn-cyan:hover   { background: #000; color: #00c8c8 !important; }
+
+/* Striped accent */
+.btn-stripe {
+  background: repeating-linear-gradient(
+    45deg, #ffd600, #ffd600 5px, #000 5px, #000 10px
+  );
+  color: #000;
+  border-color: #000;
+  text-shadow: 0 0 4px #ffd600;
+}
+.btn-stripe:hover { opacity: .8; background: #000; color: #ffd600 !important; }
+
+/* Inverted */
+.btn-inverted { background: #000; color: #fffef5; font-family: 'Anton', sans-serif; letter-spacing: 2px; }
+.btn-inverted:hover { background: #e00; }
+
+/* No border ghost */
+.btn-ghost { border-style: dashed; background: transparent; color: #000; }
+.btn-ghost:hover { background: #000; color: #fffef5 !important; border-style: solid; }
+
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.icon { font-style: normal; font-size: 1.1em; line-height: 1; }
+
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: #000; font-weight: 700; text-decoration: none; font-size: .9rem;
+  margin-top: 8px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #000;
+  padding-bottom: 1px;
+}
+.back-link:hover { background: #000; color: #fffef5; padding: 2px 6px; }

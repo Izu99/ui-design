@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap');
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0d0d0d;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #e8e8e8;
+}
+
+.page-header { text-align: center; margin-bottom: 48px; }
+.page-header h1 { font-size: 2.2rem; font-weight: 700; color: #fff; letter-spacing: -0.5px; }
+.page-header p { margin-top: 8px; color: #666; }
+
+.showcase { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+
+.card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 28px 32px;
+}
+
+.card h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .72rem;
+  font-weight: 400;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+/* ── Bento button base ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .15s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn:hover { opacity: .85; transform: translateY(-1px); }
+.btn:active { transform: translateY(0); opacity: 1; }
+
+/* Sizes */
+.btn-sm { font-size: .8rem; padding: 7px 14px; }
+.btn-md { font-size: .9rem; padding: 10px 20px; }
+.btn-lg { font-size: 1rem; padding: 14px 28px; }
+
+/* Solid fills */
+.btn-white    { background: #fff; color: #0d0d0d; }
+.btn-accent   { background: #6ee7b7; color: #0d0d0d; }
+.btn-blue     { background: #60a5fa; color: #0d0d0d; }
+.btn-purple   { background: #a78bfa; color: #0d0d0d; }
+.btn-yellow   { background: #fbbf24; color: #0d0d0d; }
+.btn-red      { background: #f87171; color: #0d0d0d; }
+.btn-orange   { background: #fb923c; color: #0d0d0d; }
+
+/* Subtle dark fills */
+.btn-dark-fill { background: #252525; color: #e8e8e8; border: 1px solid #333; }
+.btn-dark-fill:hover { background: #303030; opacity: 1; }
+
+/* Outlined */
+.btn-outline-white  { background: transparent; color: #fff; border: 1.5px solid #fff; }
+.btn-outline-accent { background: transparent; color: #6ee7b7; border: 1.5px solid #6ee7b7; }
+.btn-outline-blue   { background: transparent; color: #60a5fa; border: 1.5px solid #60a5fa; }
+
+.btn-outline-white:hover  { background: rgba(255,255,255,.08); opacity: 1; }
+.btn-outline-accent:hover { background: rgba(110,231,183,.08); opacity: 1; }
+.btn-outline-blue:hover   { background: rgba(96,165,250,.08); opacity: 1; }
+
+/* Ghost */
+.btn-ghost { background: transparent; color: #888; border: 1.5px dashed #333; }
+.btn-ghost:hover { border-color: #555; color: #aaa; opacity: 1; }
+
+/* Pill */
+.btn-pill { border-radius: 999px; }
+
+/* Monospace variant */
+.btn-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .82rem;
+  background: #1a1a1a;
+  color: #6ee7b7;
+  border: 1px solid #2a2a2a;
+}
+.btn-mono:hover { border-color: #6ee7b7; opacity: 1; }
+
+.btn-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.icon { font-style: normal; font-size: 1.1em; line-height: 1; }
+
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: #6ee7b7; font-weight: 600; text-decoration: none; font-size: .9rem;
+  margin-top: 8px;
+}
+.back-link:hover { color: #fff; }

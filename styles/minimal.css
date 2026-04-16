@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  min-height: 100vh;
+  padding: 60px 20px;
+  color: #111;
+}
+
+.page-header { text-align: center; margin-bottom: 64px; }
+.page-header h1 { font-size: 2rem; font-weight: 300; color: #111; letter-spacing: -0.5px; }
+.page-header p { margin-top: 10px; color: #999; font-size: .9rem; }
+
+.showcase { max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 0; }
+
+.card {
+  padding: 40px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.card:last-child { border-bottom: none; }
+
+.card h2 {
+  font-size: .72rem;
+  font-weight: 500;
+  color: #bbb;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+/* ── Minimal button base ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all .15s;
+  text-decoration: none;
+  white-space: nowrap;
+  border: none;
+  background: none;
+}
+
+/* Sizes */
+.btn-sm { font-size: .8rem; padding: 6px 12px; }
+.btn-md { font-size: .9rem; padding: 10px 18px; }
+.btn-lg { font-size: 1rem; padding: 14px 24px; }
+
+/* Black filled */
+.btn-black {
+  background: #111;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.btn-black:hover { background: #333; }
+
+/* White filled (on dark background use only) */
+.btn-white {
+  background: #fff;
+  color: #111;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 1px solid #e5e5e5;
+}
+.btn-white:hover { border-color: #999; }
+
+/* Outlined */
+.btn-outline {
+  background: transparent;
+  color: #111;
+  border: 1px solid #111;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.btn-outline:hover { background: #111; color: #fff; }
+
+/* Ghost / text */
+.btn-ghost {
+  background: transparent;
+  color: #555;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 400;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+}
+.btn-ghost:hover { color: #111; border-bottom-color: #111; }
+
+/* Underline only */
+.btn-underline {
+  background: transparent;
+  color: #111;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 500;
+  border-bottom: 1px solid #111;
+  border-radius: 0;
+}
+.btn-underline:hover { color: #555; border-bottom-color: #555; }
+
+/* Pill */
+.btn-pill { border-radius: 999px; }
+
+/* Subtle gray */
+.btn-gray {
+  background: #f5f5f5;
+  color: #111;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.btn-gray:hover { background: #ebebeb; }
+
+/* Danger minimal */
+.btn-danger {
+  background: transparent;
+  color: #c00;
+  border: 1px solid #c00;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.btn-danger:hover { background: #c00; color: #fff; }
+
+/* Add dashed */
+.btn-dashed {
+  background: transparent;
+  color: #999;
+  border: 1.5px dashed #ccc;
+  border-radius: 4px;
+  font-weight: 400;
+}
+.btn-dashed:hover { border-color: #999; color: #555; }
+
+.btn-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.icon { font-style: normal; font-size: 1em; line-height: 1; }
+
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: #999; font-weight: 400; text-decoration: none; font-size: .85rem;
+  margin-top: 8px;
+  border-bottom: 1px solid transparent;
+}
+.back-link:hover { color: #111; border-bottom-color: #111; }

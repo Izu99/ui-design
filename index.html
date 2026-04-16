@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Design Styles Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+
+<!-- ── HOMEPAGE GRID (unchanged) ── -->
+<h1>UI Design Styles</h1>
+<p class="subtitle">Each button is styled in its own design language</p>
+<div class="grid">
+  <a href="pages/flat.html" class="btn-flat">Flat</a>
+  <a href="pages/material.html" class="btn-material">Material</a>
+  <a href="pages/neumorphism.html" class="btn-neumorphism">Neumorphism</a>
+  <a href="pages/skeuomorphism.html" class="btn-skeuomorphism">Skeuomorphism</a>
+  <a href="pages/neubrutalism.html" class="btn-neubrutalism">Neubrutalism</a>
+  <a href="pages/minimal.html" class="btn-minimal">Minimal</a>
+  <a href="pages/bento.html" class="btn-bento">Bento</a>
+  <a href="pages/organic.html" class="btn-organic">Organic</a>
+  <a href="pages/clay.html" class="btn-clay">Clay</a>
+  <a href="pages/glass.html" class="btn-glass">Glassmorphism</a>
+  <a href="pages/brutalism.html" class="btn-brutalism">Brutalism</a>
+  <a href="pages/realistic.html" class="btn-realistic">Realistic</a>
+</div>
+
+<!-- ── STYLE COMPARATOR ── -->
+<div class="comparator-wrap">
+
+  <div class="comparator-header">
+    <div>
+      <h2 class="comparator-title">Style Comparator</h2>
+      <p class="comparator-sub">Same login UI — switch style to compare</p>
+    </div>
+    <div class="picker-wrap">
+      <label class="picker-label" for="stylePicker">Design Style</label>
+      <select id="stylePicker" class="picker-select">
+        <option value="flat">Flat</option>
+        <option value="material">Material</option>
+        <option value="neumorphism">Neumorphism</option>
+        <option value="skeuomorphism">Skeuomorphism</option>
+        <option value="neubrutalism">Neubrutalism</option>
+        <option value="minimal">Minimal</option>
+        <option value="bento">Bento</option>
+        <option value="organic">Organic</option>
+        <option value="clay">Clay</option>
+        <option value="glass">Glassmorphism</option>
+        <option value="brutalism">Brutalism</option>
+        <option value="realistic">Realistic</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Demo viewport -->
+  <div class="demo-viewport">
+    <div class="demo s-flat" id="demo">
+
+      <div class="d-card">
+
+        <div class="d-logo">&#9670;</div>
+        <h2 class="d-title">Welcome back</h2>
+        <p class="d-subtitle">Sign in to your account to continue</p>
+
+        <div class="d-field">
+          <label class="d-label">Email address</label>
+          <input class="d-input" type="email" placeholder="you@example.com">
+        </div>
+
+        <div class="d-field">
+          <label class="d-label">Password</label>
+          <input class="d-input" type="password" placeholder="••••••••">
+        </div>
+
+        <div class="d-field">
+          <label class="d-label">Role</label>
+          <select class="d-select">
+            <option value="">Select your role</option>
+            <option>Admin</option>
+            <option>Editor</option>
+            <option>Viewer</option>
+            <option>Guest</option>
+          </select>
+        </div>
+
+        <div class="d-row">
+          <label class="d-check">
+            <input type="checkbox"> Remember me
+          </label>
+          <a href="#" class="d-link">Forgot password?</a>
+        </div>
+
+        <button class="d-btn-primary">Sign In</button>
+        <button class="d-btn-secondary">Create Account</button>
+
+        <p class="d-footer">
+          Don't have an account? <a href="#" class="d-link">Sign up free</a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const picker = document.getElementById('stylePicker');
+  const demo   = document.getElementById('demo');
+  const styles = [
+    'flat','material','neumorphism','skeuomorphism',
+    'neubrutalism','minimal','bento','organic',
+    'clay','glass','brutalism','realistic'
+  ];
+
+  picker.addEventListener('change', () => {
+    styles.forEach(s => demo.classList.remove('s-' + s));
+    demo.classList.add('s-' + picker.value);
+  });
+</script>
+
+</body>
+</html>

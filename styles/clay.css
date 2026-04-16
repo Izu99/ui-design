@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap');
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #fef3f8;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #3d1a45;
+}
+
+.page-header { text-align: center; margin-bottom: 48px; }
+.page-header h1 { font-size: 2.4rem; font-weight: 800; color: #3d1a45; }
+.page-header p { margin-top: 8px; color: #a67bb0; font-weight: 600; }
+
+.showcase { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+
+.card {
+  background: #fff0f8;
+  border-radius: 28px;
+  padding: 28px 32px;
+  box-shadow:
+    0 8px 0 #e8b4d8,
+    0 12px 24px rgba(200,80,150,.15);
+}
+
+.card h2 {
+  font-size: .78rem;
+  font-weight: 800;
+  color: #c880a0;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+}
+
+/* ── Clay button base ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 18px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .15s, box-shadow .15s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-3px); }
+.btn:active { transform: translateY(2px); }
+
+/* Sizes */
+.btn-sm { font-size: .82rem; padding: 8px 16px; }
+.btn-md { font-size: .95rem; padding: 12px 24px; }
+.btn-lg { font-size: 1.05rem; padding: 16px 32px; }
+
+/* Clay puff effect via bottom shadow */
+.btn-pink {
+  background: #ff7eb3;
+  color: #fff;
+  box-shadow: 0 6px 0 #d44e87, 0 8px 16px rgba(255,126,179,.35);
+}
+.btn-pink:hover { box-shadow: 0 8px 0 #d44e87, 0 12px 20px rgba(255,126,179,.4); }
+.btn-pink:active { box-shadow: 0 2px 0 #d44e87; }
+
+.btn-purple {
+  background: #c084fc;
+  color: #fff;
+  box-shadow: 0 6px 0 #8e44c7, 0 8px 16px rgba(192,132,252,.35);
+}
+.btn-purple:hover { box-shadow: 0 8px 0 #8e44c7; }
+.btn-purple:active { box-shadow: 0 2px 0 #8e44c7; }
+
+.btn-blue {
+  background: #60a5fa;
+  color: #fff;
+  box-shadow: 0 6px 0 #2563eb, 0 8px 16px rgba(96,165,250,.35);
+}
+.btn-blue:hover { box-shadow: 0 8px 0 #2563eb; }
+.btn-blue:active { box-shadow: 0 2px 0 #2563eb; }
+
+.btn-mint {
+  background: #34d399;
+  color: #fff;
+  box-shadow: 0 6px 0 #059669, 0 8px 16px rgba(52,211,153,.35);
+}
+.btn-mint:hover { box-shadow: 0 8px 0 #059669; }
+.btn-mint:active { box-shadow: 0 2px 0 #059669; }
+
+.btn-peach {
+  background: #fb923c;
+  color: #fff;
+  box-shadow: 0 6px 0 #c2560f, 0 8px 16px rgba(251,146,60,.35);
+}
+.btn-peach:hover { box-shadow: 0 8px 0 #c2560f; }
+.btn-peach:active { box-shadow: 0 2px 0 #c2560f; }
+
+.btn-red {
+  background: #f87171;
+  color: #fff;
+  box-shadow: 0 6px 0 #b91c1c, 0 8px 16px rgba(248,113,113,.35);
+}
+.btn-red:hover { box-shadow: 0 8px 0 #b91c1c; }
+.btn-red:active { box-shadow: 0 2px 0 #b91c1c; }
+
+.btn-yellow {
+  background: #fcd34d;
+  color: #3d1a45;
+  box-shadow: 0 6px 0 #b45309, 0 8px 16px rgba(252,211,77,.35);
+}
+.btn-yellow:hover { box-shadow: 0 8px 0 #b45309; }
+.btn-yellow:active { box-shadow: 0 2px 0 #b45309; }
+
+/* Outline clay */
+.btn-outline {
+  background: transparent;
+  color: #ff7eb3;
+  border: 3px solid #ff7eb3;
+  border-radius: 18px;
+  box-shadow: 0 4px 0 #d44e87;
+}
+.btn-outline:hover { background: #fff0f8; box-shadow: 0 6px 0 #d44e87; }
+.btn-outline:active { box-shadow: 0 1px 0 #d44e87; transform: translateY(3px); }
+
+/* Pill */
+.btn-pill { border-radius: 999px; }
+
+/* Large add card */
+.btn-add-clay {
+  background: #ff7eb3;
+  color: #fff;
+  border-radius: 999px;
+  font-size: 1.05rem;
+  padding: 14px 30px;
+  box-shadow: 0 7px 0 #d44e87, 0 10px 20px rgba(255,126,179,.4);
+  gap: 10px;
+}
+.btn-add-clay:hover { box-shadow: 0 9px 0 #d44e87, 0 14px 24px rgba(255,126,179,.45); }
+.btn-add-clay:active { box-shadow: 0 2px 0 #d44e87; transform: translateY(5px); }
+
+.btn-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.icon { font-style: normal; font-size: 1.1em; line-height: 1; }
+
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: #c084fc; font-weight: 800; text-decoration: none; font-size: .9rem;
+  margin-top: 8px;
+}
+.back-link:hover { color: #ff7eb3; }
